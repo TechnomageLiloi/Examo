@@ -1,0 +1,5 @@
+/vendor/
+/composer.lock
+/Builder/Codex.phar
+/Config/Private.Battle.json
+/Config/Private.json
