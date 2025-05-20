@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Codex\Exceptions;
+namespace Liloi\Examo\Exceptions;
 
 use Liloi\Judex\ExtendedException;
 
@@ -9,14 +9,14 @@ use Liloi\Judex\ExtendedException;
  *
  * @package Exceptions
  */
-class CodexException extends ExtendedException
+class ExamoException extends ExtendedException
 {
     /**
      * Exception message.
      *
      * @var string
      */
-    protected $defaultMessage = 'General Codex exception.';
+    protected $defaultMessage = 'General Examo exception.';
 
     /**
      * Exception code.

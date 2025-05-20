@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Codex\Exceptions;
+namespace Liloi\Examo\Exceptions;
 
-class AccessException extends CodexException
+class AccessException extends ExamoException
 {
     /**
      * Exception message.

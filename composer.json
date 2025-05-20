@@ -1,5 +1,5 @@
 {
-  "name": "technomage-liloi/codex",
+  "name": "technomage-liloi/examo",
   "license": "BSD-3-Clause",
   "description": "Rune",
   "require": {
@@ -10,7 +10,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Liloi\\Codex\\": "Sources"
+      "Liloi\\Examo\\": "Sources"
     }
   }
 }

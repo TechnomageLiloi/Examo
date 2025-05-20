@@ -5,13 +5,13 @@ include_once __DIR__ . '/vendor/autoload.php';
 $private = json_decode(file_get_contents(__DIR__ . '/Config/Private.json'), true);
 
 $config = array_merge([
-    'title' => 'Codex',
+    'title' => 'Examo',
     'start' => 'Requests.layout();',
     'scripts' => [
     ],
-    'prefix' => 'codex_'
+    'prefix' => 'examo_'
 ], $private);
 
-$app = new \Liloi\Codex\Application($config);
+$app = new \Liloi\Examo\Application($config);
 
 echo $app->compile();

@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Codex\Exceptions;
+namespace Liloi\Examo\Exceptions;
 
-class UndefinedException extends CodexException
+class UndefinedException extends ExamoException
 {
     /**
      * Exception message.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Codex\Exceptions;
+namespace Liloi\Examo\Exceptions;
 
-class NotFoundException extends CodexException
+class NotFoundException extends ExamoException
 {
     /**
      * Exception message.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Codex\Domains\Config;
+namespace Liloi\Examo\Domains\Config;
 
-use Liloi\Codex\Domains\Manager as DomainManager;
+use Liloi\Examo\Domains\Manager as DomainManager;
 
 class Manager extends DomainManager
 {

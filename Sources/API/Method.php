@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Codex\API;
+namespace Liloi\Examo\API;
 
 abstract class Method
 {

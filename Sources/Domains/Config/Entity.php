@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Codex\Domains\Config;
+namespace Liloi\Examo\Domains\Config;
 
 use Liloi\Tools\Entity as AbstractEntity;
 use Liloi\Stylo\Parser;
