@@ -2,8 +2,8 @@
 
 namespace Liloi\Examo\Domains\Suites;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
-use Liloi\TARDIS\Application;
+use Liloi\Examo\Domains\Manager as DomainManager;
+use Liloi\Examo\Application;
 
 class Manager extends DomainManager
 {
@@ -52,6 +52,11 @@ class Manager extends DomainManager
             $keyQuest
         ));
 
+        if(!$row)
+        {
+            return self::create($keyQuest);
+        }
+
         return Entity::create($row);
     }
 
@@ -93,10 +98,11 @@ class Manager extends DomainManager
     /**
      * Create problem in database.
      */
-    public static function create(): Entity
+    public static function create(string $keyQuest): Entity
     {
         $name = self::getTableName();
         $data = [
+            'key_suite' => $keyQuest,
             'title' => '-',
             'program' => '-',
             'mark' => '0',
@@ -105,5 +111,10 @@ class Manager extends DomainManager
 
         self::insert($name, $data);
         return Entity::create($data);
+    }
+
+    public static function URIToID(string $link): string
+    {
+        return ':' . str_replace('/', ':', trim($link, '/'));
     }
 }

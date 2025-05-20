@@ -2,8 +2,8 @@
 
 namespace Liloi\Examo\Domains\Tests;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
-use Liloi\TARDIS\Application;
+use Liloi\Examo\Domains\Manager as DomainManager;
+use Liloi\Examo\Application;
 
 class Manager extends DomainManager
 {

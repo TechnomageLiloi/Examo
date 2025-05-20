@@ -13,11 +13,11 @@ class Method extends AbstractMethod
 {
     public function execute(): array
     {
-        $collection = SuitesManager::loadCollection();
+        $suite = SuitesManager::load(SuitesManager::URIToID($_SERVER['REQUEST_URI']));
 
         return [
             'render' => $this->render(__DIR__ . '/Template.tpl', [
-                'collection' => $collection
+                'suite' => $suite
             ])
         ];
     }
