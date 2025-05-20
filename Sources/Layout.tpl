@@ -16,6 +16,7 @@
     <body>
         <div style="text-align: center;">
             <a class="butn" href="javascript:void(0)" onclick="window.location.reload();">Refresh</a>
+            <a class="butn" href="javascript:void(0)" onclick="Requests.Suites.edit();">Edit</a>
         </div>
         <hr/>
         <div id="page">

@@ -38,10 +38,10 @@ Requests.Suites = {
     },
 
 
-    edit: function (key)
+    edit: function ()
     {
         API.request('Suites.Edit', {
-            'key': key
+            'debug': true
         }, function (data) {
             $('#page').html(data.render);
         }, function () {
@@ -49,7 +49,7 @@ Requests.Suites = {
         });
     },
 
-    save: function (key)
+    save: function ()
     {
         if(!confirm('Are you sure?'))
         {
@@ -58,10 +58,9 @@ Requests.Suites = {
 
         const jq_block = $('#ticket-edit');
         API.request('Suites.Save', {
-            'key': key,
             'title': jq_block.find('[name="title"]').val(),
-            'goal': jq_block.find('[name="goal"]').val(),
-            'status': jq_block.find('[name="status"]').val(),
+            'mark': jq_block.find('[name="mark"]').val(),
+            'data': jq_block.find('[name="data"]').val(),
             'program': jq_block.find('[name="program"]').val()
         }, function (data) {
             Requests.Suites.getCollection();

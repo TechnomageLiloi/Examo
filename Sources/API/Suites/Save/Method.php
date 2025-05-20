@@ -2,21 +2,21 @@
 
 namespace Liloi\Examo\API\Suites\Save;
 
-use Liloi\Examo\Domains\Suites\Manager;
+use Liloi\Examo\Domains\Suites\Manager as SuitesManager;
 use Liloi\Examo\API\Method as AbstractMethod;
 
 class Method extends AbstractMethod
 {
     public function execute(): array
     {
-        $entity = Manager::load($_POST['parameters']['key']);
+        $suite = SuitesManager::load(SuitesManager::URIToID($_SERVER['REQUEST_URI']));
 
-        $entity->setTitle($_POST['parameters']['title']);
-        $entity->setProgram($_POST['parameters']['program']);
-        $entity->setStatus($_POST['parameters']['status']);
-        $entity->setGoal($_POST['parameters']['goal']);
+        $suite->setTitle($_POST['parameters']['title']);
+        $suite->setProgram($_POST['parameters']['program']);
+        $suite->setMark($_POST['parameters']['mark']);
+        $suite->setData($_POST['parameters']['data']);
 
-        $entity->save();
+        $suite->save();
 
         return [];
     }
