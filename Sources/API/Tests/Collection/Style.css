@@ -1,0 +1,12 @@
+#modules-tests-collection table {
+  width: 100%;
+}
+#modules-tests-collection table tr.defended-test {
+  color: green;
+}
+#modules-tests-collection table tr.defending-now-test {
+  color: orange;
+}
+#modules-tests-collection table tr.not-defended-test {
+  color: red;
+}
