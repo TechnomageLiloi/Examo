@@ -66,11 +66,12 @@ class Manager extends DomainManager
         $data = $entity->get();
 
         $keyQuest = $data['key_test'];
+        $keySuite = $data['key_suite'];
 
         self::update(
             $name,
             $data,
-            sprintf('key_test = "%s"', $keyQuest)
+            sprintf('key_test = "%s" and key_suite = "%s"', $keyQuest, $keySuite)
         );
     }
 

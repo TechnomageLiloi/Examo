@@ -41,7 +41,7 @@ Requests.Tests = {
     edit: function (key)
     {
         API.request('Tests.Edit', {
-            'key': key
+            'key_test': key
         }, function (data) {
             $('#page').html(data.render);
         }, function () {
@@ -58,13 +58,16 @@ Requests.Tests = {
 
         const jq_block = $('#ticket-edit');
         API.request('Tests.Save', {
-            'key': key,
+            'key_test': key,
             'title': jq_block.find('[name="title"]').val(),
-            'goal': jq_block.find('[name="goal"]').val(),
+            'program': jq_block.find('[name="program"]').val(),
             'status': jq_block.find('[name="status"]').val(),
-            'program': jq_block.find('[name="program"]').val()
+            'type': jq_block.find('[name="type"]').val(),
+            'done': jq_block.find('[name="done"]').val(),
+            'hint': jq_block.find('[name="hint"]').val(),
+            'note': jq_block.find('[name="note"]').val()
         }, function (data) {
-            Requests.Tests.getCollection();
+            Requests.Suites.getCollection();
         }, function () {
 
         });

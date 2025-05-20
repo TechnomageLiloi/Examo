@@ -24,8 +24,8 @@ use Liloi\Stylo\Parser as StyloParser;
  * @method string getHint()
  * @method void setHint(string $value)
  *
- * @method string getNode()
- * @method void setNode(string $value)
+ * @method string getNote()
+ * @method void setNote(string $value)
  */
 class Entity extends AbstractEntity
 {
