@@ -37,6 +37,7 @@ create table examo_tests
 	type tinyint unsigned default 1 not null,
 	done tinyint unsigned default 0 not null,
 	hint text not null,
+	note text not null,
 	constraint examo_tests_pk
 		primary key (key_suite, key_test),
     constraint examo_tests_key_suite_fk
