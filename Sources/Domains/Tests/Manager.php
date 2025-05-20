@@ -17,13 +17,13 @@ class Manager extends DomainManager
         return self::getTablePrefix() . 'tests';
     }
 
-    public static function loadCollection(): Collection
+    public static function loadCollection(string $keyQuest): Collection
     {
         $name = self::getTableName();
 
         $rows = self::getAdapter()->getArray(sprintf(
-            'select * from %s where key_test order by key_test desc;',
-            $name
+            'select * from %s where key_suite="%s" order by key_test asc;',
+            $name, $keyQuest
         ));
 
         $collection = new Collection();
