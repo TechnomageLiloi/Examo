@@ -13,7 +13,7 @@ Requests.Tests = {
     show: function (key)
     {
         API.request('Tests.Show', {
-            'key': key
+            'key_test': key
         }, function (data) {
             $('#page').html(data.render);
         }, function () {

@@ -20,18 +20,6 @@
     }
 </style>
 
-<table id="table-road">
-    <tr>
-        <td>
-            <?php echo $entity->getTitle(); ?>
-        </td>
-        <td style="text-align: right;">
-            <a href="javascript:void(0)" onclick="Requests.Tests.edit('<?php echo $entity->getKey(); ?>');">Edit</a> &diams;
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <?php echo $entity->getProgramParse(); ?>
-        </td>
-    </tr>
-</table>
+<div>
+    <h1><?php echo $entity->getTitle(); ?></h1>
+</div>

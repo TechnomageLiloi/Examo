@@ -27,6 +27,7 @@
                 <?php echo $entity->getTitle(); ?>
             </td>
             <td>
+                <a href="javascript:void(0)" class="butn" onclick="Requests.Tests.show('<?php echo $entity->getKey(); ?>');">Show</a>
                 <a href="javascript:void(0)" class="butn" onclick="Requests.Tests.edit('<?php echo $entity->getKey(); ?>');">Edit</a>
             </td>
         </tr>
