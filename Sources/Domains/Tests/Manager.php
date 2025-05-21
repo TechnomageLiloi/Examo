@@ -87,6 +87,7 @@ class Manager extends DomainManager
             'title' => '-',
             'program' => '{}',
             'status' => Statuses::DEVELOP,
+            'type' => Types::DEVELOP,
             'hint' => '-',
             'note' => '-'
         ];
