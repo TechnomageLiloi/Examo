@@ -28,10 +28,12 @@ Requests.Tests = {
             return;
         }
 
+        const jq_block = $('#modules-suites-collection');
+
         API.request('Tests.Create', {
-            'debug': true
+            'key_test': jq_block.find('[name="key_test"]').val(),
         }, function (data) {
-            Requests.Tests.getCollection();
+            Requests.Suites.getCollection();
         }, function () {
 
         });

@@ -85,7 +85,8 @@ class Manager extends DomainManager
             'key_test' => $keyTest,
             'key_suite' => $keySuite,
             'title' => '-',
-            'program' => '-',
+            'program' => '{}',
+            'status' => Statuses::DEVELOP,
             'hint' => '-',
             'note' => '-'
         ];

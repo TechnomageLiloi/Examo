@@ -9,6 +9,7 @@
 
     <hr/>
     <a href="javascript:void(0)" class="butn" onclick="Requests.Tests.create();">Create</a>
+    <input type="text" name="key_test">
 
     <hr/>
     <table>
