@@ -4,7 +4,7 @@
     <div class="controls">
         <?php echo $entity->getProgram(); ?>
         <hr/>
-        <div id="items" style="display: none;">
+        <div id="items">
             <table>
                 <tr>
                     <th>Filename</th>
