@@ -7,6 +7,7 @@
 
         <script><?php echo file_get_contents(dirname(__DIR__) . '/Sources/API/Requests.js'); ?></script>
         <script><?php echo file_get_contents(dirname(__DIR__) . '/Sources/API/Maps/Requests.js'); ?></script>
+        <script><?php echo file_get_contents(dirname(__DIR__) . '/Sources/API/Services/Requests.js'); ?></script>
 
         <style><?php echo file_get_contents(__DIR__ . '/Style.css'); ?></style>
 
