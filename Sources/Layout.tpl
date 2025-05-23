@@ -6,6 +6,7 @@
         <script><?php echo file_get_contents(dirname(__DIR__) . '/vendor/technomage-liloi/rune-api/Client/API.js'); ?></script>
 
         <script><?php echo file_get_contents(dirname(__DIR__) . '/Sources/API/Requests.js'); ?></script>
+        <script><?php echo file_get_contents(dirname(__DIR__) . '/Sources/API/Maps/Requests.js'); ?></script>
 
         <style><?php echo file_get_contents(__DIR__ . '/Style.css'); ?></style>
 
@@ -14,11 +15,12 @@
     <body>
         <div style="text-align: center;">
             <a class="butn" href="javascript:void(0)" onclick="window.location.reload();">Refresh</a>
+            <a class="butn" href="javascript:void(0)" onclick="$('#items').toggle();">Items</a>
             <!--<a class="butn" href="javascript:void(0)" onclick="Requests.Suites.edit();">Edit</a>-->
         </div>
         <hr/>
         <div id="page">
-            <script>// Requests.Suites.getCollection();</script>
+            <script>Requests.Maps.show();</script>
         </div>
     </body>
 </html>
