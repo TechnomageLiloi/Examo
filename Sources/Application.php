@@ -1,16 +1,16 @@
 <?php
 
-namespace Liloi\Examo;
+namespace Liloi\Rune;
 
 use Rune\Application\General as GeneralApplication;
-use Liloi\Examo\Domains\Manager as DomainsManager;
+use Liloi\Rune\Domains\Manager as DomainsManager;
 use Liloi\Config\Pool;
 use Liloi\Config\Sparkle;
-use Liloi\Examo\Exceptions\NotFoundException;
-use Liloi\Examo\API\Method;
+use Liloi\Rune\Exceptions\NotFoundException;
+use Liloi\Rune\API\Method;
 
-use Liloi\Examo\Domains\Config\Keys as ConfigKeys;
-use Liloi\Examo\Domains\Config\Manager as ConfigManager;
+use Liloi\Rune\Domains\Config\Keys as ConfigKeys;
+use Liloi\Rune\Domains\Config\Manager as ConfigManager;
 
 class Application extends GeneralApplication
 {
@@ -62,7 +62,7 @@ class Application extends GeneralApplication
             return $this->$name($parameters);
         }
 
-        $classMethod = 'Liloi\\Examo\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
+        $classMethod = 'Liloi\\Rune\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
 
         if(class_exists($classMethod))
         {

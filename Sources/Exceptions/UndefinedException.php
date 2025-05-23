@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Examo\Exceptions;
+namespace Liloi\Rune\Exceptions;
 
-class UndefinedException extends ExamoException
+class UndefinedException extends RuneException
 {
     /**
      * Exception message.

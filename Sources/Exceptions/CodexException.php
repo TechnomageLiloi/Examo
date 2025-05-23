@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Examo\Exceptions;
+namespace Liloi\Rune\Exceptions;
 
 use Liloi\Judex\ExtendedException;
 
@@ -9,14 +9,14 @@ use Liloi\Judex\ExtendedException;
  *
  * @package Exceptions
  */
-class ExamoException extends ExtendedException
+class RuneException extends ExtendedException
 {
     /**
      * Exception message.
      *
      * @var string
      */
-    protected $defaultMessage = 'General Examo exception.';
+    protected $defaultMessage = 'General Rune exception.';
 
     /**
      * Exception code.

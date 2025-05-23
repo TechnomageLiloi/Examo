@@ -12,6 +12,6 @@ $config = array_merge([
     'prefix' => ''
 ], $private);
 
-$app = new \Liloi\Examo\Application($config);
+$app = new \Liloi\Rune\Application($config);
 
 echo $app->compile();

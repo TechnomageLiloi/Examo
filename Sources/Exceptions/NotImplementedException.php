@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Examo\Exceptions;
+namespace Liloi\Rune\Exceptions;
 
-class NotImplementedException extends ExamoException
+class NotImplementedException extends RuneException
 {
     /**
      * Exception message.

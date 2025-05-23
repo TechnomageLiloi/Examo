@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Examo\Domains\Config;
+namespace Liloi\Rune\Domains\Config;
 
 class Keys
 {
