@@ -28,3 +28,16 @@ create table levels
 );
 
 insert into levels VALUES (1,'Teacher',1,'-','-');
+
+create table quests
+(
+    key_quest bigint unsigned auto_increment,
+    title varchar(250) not null,
+    program text not null,
+    status tinyint unsigned default 1 not null,
+    start timestamp not null,
+    tags varchar(100) not null,
+    data json not null,
+    constraint quests_pk
+        primary key (key_quest)
+);
