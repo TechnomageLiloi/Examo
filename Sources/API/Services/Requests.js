@@ -1,4 +1,16 @@
 Requests.Services = {
+    Files: {
+        show: function (name) {
+            API.request('Services.Files.Show', {
+                name: name
+            }, function (data) {
+                $('#page').html(data.render);
+            }, function () {
+
+            });
+        },
+    },
+
     Text: {
         edit: function (name)
         {

@@ -8,7 +8,8 @@ Requests.Maps = {
             let url = window.location.href;
             if(url.indexOf('#') >= 0)
             {
-                alert(url);
+                let file = url.split('#')[1];
+                Requests.Services.Files.show(file);
                 return;
             }
 
